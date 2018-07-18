@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/boy2.css" />
+		<script src="js/prefixfree.min.js"></script>
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script src=""></script>
+	</head>
+	<body>
+		<div class="box">
+		<div class="inner">
+			<div class="logo-top ">
+			    <a href="##">
+				    <img src="img/boy/me.svg"/>
+		        </a>
+		    </div>
+		    
+		    <div class="logo-top1">
+			    <a href="##">
+				    <img src="img/boy/googleplay.svg"/>
+		        </a>
+		    </div>
+		    <div class="logo-top2">
+			    <a href="##">
+				    <img src="img/boy/applestore.svg"/>
+		        </a>
+		    </div>
+		    
+		</div>
+		<div class="right">
+			<div class="h1">
+				<img src="img/boy/boy-num01.png" />
+				    
+			</div>
+			<div class="h2">
+				<img src="img/boy/boy-title-about.png" />
+			</div>
+			<div class="p1">
+				<p>出会っているのに、</p>
+				<div class="b b1"></div>
+				<div class="b b2"></div>
+				<div class="b b3"></div>
+				<div class="b b4"></div>
+			</div>
+			<div class="p2">
+				<span>知り合えないなんて。</span>
+			</div>
+			<div class="text">
+				<article>
+				同じとき、同じ場所にいたふたりは、<br>「すでに出会っている」と言えるのかもしれません。<br>きょう、あなたは何人の女の子とすれ違ったでしょう。<br>まいにち通る道で、ふと立ち寄ったお店で、いつの間にか訪れているこの偶然を逃すなんてもったいない。<br>そう思いませんか。
+			</article>
+			</div>
+			
+		</div>
+	<!--动态边框-->
+         <div class="border-box border-box-top"></div>
+         <div class="border-box border-box-right"></div>
+         <div class="border-box border-box-bottom"></div>
+         <div class="border-box border-box-left"></div>
+    
+
+     <div class="dd">
+	<ul>
+		<a href="boy1.html"><li class="bubbly-button" id="button1"></li></a>
+		<li class="bubbly-button" id="button2"></li>
+		<a href="end.html"><li class="bubbly-button" id="button3"></li></a>
+	</ul>
+           </div>
+<div class="picture">
+    	<div class="picture1">
+    	<!--<img src="img/boy/bg-boy04-sp.jpg" />-->
+</div>
+</div>
+
+</div>
+<script>
+var animateButton = function(e) {
+
+  e.preventDefault;
+  //reset animation
+  e.target.classList.remove('animate');
+  
+  e.target.classList.add('animate');
+  setTimeout(function(){
+    e.target.classList.remove('animate');
+  },700);
+};
+
+var classname = document.getElementsByClassName("bubbly-button");
+
+for (var i = 0; i < classname.length; i++) {
+  classname[i].addEventListener('click', animateButton, false);
+}
+
+$("#button2").click(function(){
+	$(".picture1").slideToggle();//切换显示和隐藏状态
+})
+</script>
+	</body>
+</html>

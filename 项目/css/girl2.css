@@ -1,0 +1,242 @@
+/*清楚默认样式*/
+*{margin: 0;padding: 0;}
+/*去掉a标签自带的下划线*/
+a{text-decoration: none;}
+/*去掉列表符小圆点*/
+li{list-style: none;}
+input{border: none;}
+
+body{
+	background: #fc6396;
+	background-image: url(../img/bg-girl02.jpg);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	/*contain背景图等比例拉伸 完整显示再盒子中,可能出现留白;cover背景图等比例拉伸至 整个盒子都有背景，但图片可能不完整*/
+	background-size: cover;
+	/*第一个是y方向,第二个是x*/
+	background-position: center top;
+}
+/*.logo-top{
+	margin-top:10px ;
+	margin-left:15px ;
+	width: 143px;
+	height: 50px;
+	
+	
+}*/
+.one{
+	width: 10%;
+	height: 600px;
+	float: left;
+	position: relative;
+}
+.lt{
+	position: absolute;
+	top: 320px;
+	left: 40px;
+	width: 70px;
+	height: 70px;
+	background: white;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 40px;
+	color: #fc6396;
+}
+.two{
+	width: 50%;
+	height: 600px;
+	float: left;
+	/*background: yellow;*/
+}
+.two .words{
+	width: 55%;
+	height: 600px;
+	float: left;
+}
+.two .words .box1{
+	width: 250px;
+	height: 230px;
+	float: left;
+	/*display: none;*/
+}
+
+.two .words .box1 .like{
+	margin-left: 120px;
+	margin-top: 10px;
+	width: 120px;
+	height: 120px;
+}
+.two .words .box1 .num03{
+	margin-top: 120px;
+	margin-left: 50px;
+	width: 75px;
+	height: 50px;
+}
+.two .words .box1 .title-thanks{
+	margin-left: 52px;
+	margin-top: 10px;
+	width: 90px;
+	height: 15px;
+}
+.two .words .thinks{
+	margin-top: 50px;
+	margin-right:0;
+	width: 160px;
+	height: 160px;
+	float: right;
+}
+.two .words .word1{
+	margin: 240px 20px 0 50px;
+	padding: 10px;
+	width: 227px;
+	height: 40px;
+	background: #fc6396;
+	opacity: 1; 
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	color: white;
+	line-height: 40px;
+	font-size: 28px;
+}
+.two .words .word2{
+	margin: 10px 20px 0 50px;
+	padding: 10px;
+	width: 280px;
+	height: 40px;
+	background: #fc6396;
+	opacity: 1; 
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	line-height: 40px;
+	font-size: 28px;
+	color: white;
+}
+.two .words .word3{
+	margin: 50px 20px 0 50px;
+	padding: 10px;
+	width: 330px;
+	height: 210px;
+	background: #fff;
+	opacity: 1; 
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	color: black;
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: 600;
+}
+.two .iphone-screen{
+	width: 45%;
+	height: 600px;
+	float: left;
+}
+.two .iphone-screen .iphone{
+	margin: 20% 20px 5%;
+	width: 300px;
+	height: 580px;
+	position: relative;
+}
+.two .iphone-screen .over{
+	position:absolute; 
+	top: 18px;
+}
+.two .iphone-screen .screen{
+	width: 300px;
+	height: 580px;
+	margin: 50px 20px 0;
+}
+.three{
+	width: 40%;
+	height: 670px;
+	float: left;
+	/*background: palegreen;*/
+}
+.gt{
+	position: absolute;
+	top: 460px;
+	right: 40px;
+	width: 70px;
+	height: 70px;
+	background: white;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 40px;
+	color: #fc6396;
+}
+.circles{
+	width: 100%;
+	height: 50px;
+	left: 40%;
+	bottom: 10px;
+	position: absolute;
+}
+.circles span{
+	/*块级元素*/
+	display: block;
+	width: 13px;
+	height: 13px;
+	background: white;
+	/*圆角属性,50%为圆*/
+	border-radius: 50%;
+	float: left;
+	margin-left: 30px;
+}
+/*当前标签颜色*/
+.current{
+	background: #fc6396!important;
+	position: relative;
+}
+.current:hover{
+	display: block;
+	width: 13px;
+	height: 13px;
+	background: #fc6396;
+	transform:scale(2.0);
+}
+.box{
+				width: 40px;
+				height: 40px;
+				margin: 5px auto 0;
+				position: relative;
+				animation: rotate 10s infinite;
+				transform-style: preserve-3d;
+			}
+			@keyframes rotate{
+				from{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+				to{transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);}
+			}
+			.box div{
+				width: 40px;
+				height: 40px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				font-size: 10px;
+				text-align: center;
+				line-height: 40px;
+			}
+			.box div:nth-child(1){
+				background: rgba(	240, 255, 255,0.5);
+				transform: translateZ(20px);
+				z-index: 10;
+			}
+			.box div:nth-child(2){
+				background: rgba(230 ,230 ,250,0.5);
+				transform: rotateX(180deg) translateZ(20px);
+			}
+			.box div:nth-child(3){
+				background: rgba(	255, 246 ,143,0.5);
+				transform: rotateY(90deg) translateZ(20px);
+			}
+			.box div:nth-child(4){
+				background: rgba(255 ,105 ,180,0.5);
+				transform: rotateY(-90deg) translateZ(20px);
+			}
+			.box div:nth-child(5){
+				background: rgba(255,0,255,0.5);
+				transform: rotateX(90deg) translateZ(20px);
+			}
+			.box div:nth-child(6){
+				background: rgba(255,255,250,0.5);
+				transform: rotateX(-90deg) translateZ(20px);
+			}
+}

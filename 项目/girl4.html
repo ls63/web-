@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/girl4.css" />
+		<link rel="stylesheet" href="css/mo.css" />
+	</head>
+	<body>
+		<div class="logo">						
+		    	<div class="logo1">
+				<embed src="img/googleplay.svg" type="image/svg+xml" />
+		    	</div>
+		    	<div class="logo2">
+		 		<!--<embed src="img/applestore.svg" type="image/svg+xml" />-->
+		    	</div>
+	    </div>
+	    
+	    <div class="main">
+	    	<div class="lt">
+	    		<div class="btn left"><a href="girl3.html"> < </a></div>
+	    		<div class="colorbox">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+	    	</div>
+	    	
+	    	<div class="wrap">
+	    		<div class="iphone-screen">
+					<img src="img/girl4/iphone-frame.png" class="iphone"/>
+					<div class="over"><img src="img/girl4/phone-screen-girl-chat.png" class="chat"/></div>
+				</div>
+	    	</div>
+	    	
+	    	<div class="words">
+	    		<div class="box1">
+					<a href="##"><img src="img/girl4/girl-num04.png" class="num04"/></a>
+					<a href="##"><img src="img/girl4/girl-title-chat.png" class="title-chat"/></a>
+				</div>
+				<li><div class="word1">チャットずつ、</div></li>
+				<li><div class="word2">わかり合う。</div></li>
+				<li><div class="word3">「いいね!」と「ありがとう」が交わされる
+  				と、ふたりでチャットができるようになります。ここからはもう、  あなた次第。
+ 				 お互いの理解を深めながら、恋愛に結びつくことを願って
+  				います。</div></li>
+	    	</div>
+	    	
+	    	<div class="gt"><div class="btn left"><a href="end.html"> > </a></div></div>
+	    </div>
+	    
+	    <footer>
+	    	<div class="circles">
+				<a href="girl1.html" class="a-span1"><span ></span></a>
+				<a href="girl2.html" class="a-span1"><span ></span></a>
+				<a href="girl3.html" class="a-span1"><span class="current"></span></a>
+				<a href="girl4.html" class="a-span1"><span ></span></a>
+				<a href="girl5.html"class="a-span1"><span ></span></a>
+			</div>
+			<div class="bird"><p><embed src="img/tw.svg" type="image/svg+xml" /></p></div>
+			<div class="f"><p><embed src="img/fb.svg" type="image/svg+xml" /></p></div>
+			<div class="share">SHARE</div>
+		</footer>
+
+	</body>
+	<script type="text/javascript" src="js/Jquery.js" ></script>
+	<script type="text/javascript" src="js/jquery.touchSwipe.min.js" ></script>
+	<script type="text/javascript">
+		
+		$(".btn").addClass("animated zoomIn");
+			setTimeout(function(){
+				$(".btn").removeClass("zoomIn");
+		},1000);//动画持续1秒	
+		
+		$(".num04").addClass("animated bounce");
+			setTimeout(function(){
+				$(".num04").removeClass("bounce");
+		},5000);
+    	$(".title-chat").addClass("animated bounce");
+			setTimeout(function(){
+				$(".title-chat").removeClass("bounce");
+		},5000);
+		
+		$(".word1").addClass("animated flipInX");
+			setTimeout(function(){
+				$(".word1").removeClass("flipInX");
+		},7000);
+    	$(".word2").addClass("animated flipInX");
+			setTimeout(function(){
+				$(".word2").removeClass("flipInX");
+		},7000);
+		$(".word3").addClass("animated flipInX");
+			setTimeout(function(){
+				$(".word3").removeClass("flipInX");
+		},7000);
+		
+		$(".iphone").addClass("animated fadeInLeft");
+			setTimeout(function(){
+				$(".iphone").removeClass("fadeInLeft");
+		},9000);
+		$(".chat").addClass("animated fadeInLeft");
+			setTimeout(function(){
+				$(".chat").removeClass("fadeInLeft");
+		},9000);
+		
+		
+		
+	</script>
+</html>

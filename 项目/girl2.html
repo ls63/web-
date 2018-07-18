@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>-->
+		<link rel="stylesheet" href="css/girl2.css" />
+		<link rel="stylesheet" href="css/mo.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+
+	</head>
+	<body>
+		<div class="logo">	
+			<!--<div class="logo-top">
+			    <a href="##">
+				    <img src="img/me.svg"/>
+		        </a>
+		    </div>-->
+		    
+		    	<div class="logo1">
+				<embed src="img/googleplay.svg" type="image/svg+xml" />
+		    	</div>
+		    	<div class="logo2">
+		 		<!--<embed src="img/applestore.svg" type="image/svg+xml" />-->
+		    	</div>
+	    </div>
+
+		<div class="one"><div class="lt"><div class="btn left"> <a href="girl01.html"><</a></div></div></div>
+		
+		<div class="two">
+			<div class="words">
+				<div class="box1">
+					
+					<img src="img/girl-num02.png" class="num03"/>
+					<img src="img/girl-title-cross.png" class="title-thanks"/>
+				</div>
+				<div class="word1">ありがとう。</div>
+				<div class="word2">ちょっとタイプかも。</div>
+				<div class="word3">あなたのことが気になる男子は「いいね！」の合図を送ってくれます。
+					彼の顔写真や年齢、居住地などの基本的な情報をはじめ、恋愛観や性格、趣味・嗜好などから
+					「あ、この人いいかも」と思えたら、さっそく「ありがとう」をお返ししてみましょう。<br />
+					※女性からも「いいね」を送ることができます。</div>
+			</div>
+			
+			<!--<div class="iphone-screen">
+				<img src="img/iphone-frame.png" class="iphone"/>
+				<div class="over"><img src="img/phone-screen-boy-like.png" class="screen"/></div>
+			</div>-->
+		</div>
+		
+		<div class="three">
+			<div class="gt"><div class="btn left">  <a href="girl3.html">></a> </div></div>
+		</div>
+		<div class="box">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			
+			
+		</div>
+		<div class="circles">
+				<span ></span>
+				<span class="current" ></span>
+				<span ></span>
+				<span></span>
+				<span></span>
+			</div>
+		<footer>
+			
+			<div class="bird">
+				<p><embed src="img/tw.svg" type="image/svg+xml" /></p>
+			</div>
+			<div class="f">
+				<p><embed src="img/fb.svg" type="image/svg+xml" /></p>
+				
+			</div>
+			<div class="share">
+				SHARE
+			</div>
+		</div>
+		</footer>
+	</body>
+	<script src="js/girl3.js"></script>
+	<script src="js/ThreeCanvas.js"></script> 
+<script src="js/jquery.js"></script> 
+<script src="js/Snow.js"></script> 
+<script src="js/snowFall.js"></script> 
+	<script>
+	$(".btn").addClass("animated zoomIn");
+			setTimeout(function(){
+				$(".btn").removeClass("zoomIn");
+		},1000);//动画持续1秒
+$(".like").addClass("animated shake");
+			setTimeout(function(){
+				$(".like").removeClass("share");
+		},3000);//动画持续3秒
+		
+		$(".pop-thanks").addClass("animated shake");
+			setTimeout(function(){
+				$(".pop-thanks").removeClass("share");
+		},3000);
+		
+		
+		$(".num03").addClass("animated bounce");
+			setTimeout(function(){
+				$(".num03").removeClass("bounce");
+		},5000);
+    	$(".title-thanks").addClass("animated bounce");
+			setTimeout(function(){
+				$(".title-thanks").removeClass("bounce");
+		},5000);
+		
+		$(".word1").addClass("animated fadeInRight");
+			setTimeout(function(){
+				$(".word1").removeClass("fadeInRight");
+		},7000);
+    	$(".word2").addClass("animated fadeInRight");
+			setTimeout(function(){
+				$(".word2").removeClass("fadeInRight");
+		},7000);
+		$(".word3").addClass("animated lightSpeedIn");
+			setTimeout(function(){
+				$(".word3").removeClass("lightSpeedIn");
+		},7000);
+    $.snowFall({
+        //创建粒子数量，密度
+        particleNo: 500,
+        //粒子下拉速度
+        particleSpeed:30,
+        //粒子在垂直（Y轴）方向运动范围
+        particleY_Range:1300,
+        //粒子在垂直（X轴）方向运动范围
+        particleX_Range:1000,
+        //是否绑定鼠标事件
+        bindMouse: false,
+        //相机离Z轴原点距离
+        zIndex:600,
+      //摄像机视野角度
+        angle:55,
+        wind_weight:0
+        });
+</script>
+</html>

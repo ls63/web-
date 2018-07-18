@@ -1,0 +1,225 @@
+/*清楚默认样式*/
+*{margin: 0;padding: 0;}
+/*去掉a标签自带的下划线*/
+a{text-decoration: none;color: #fc6396;}
+/*去掉列表符小圆点*/
+li{list-style: none;}
+input{border: none;}
+
+body{
+	background-image: url(../img/girl4/bg-girl04.jpg);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	/*contain背景图等比例拉伸 完整显示再盒子中,可能出现留白;cover背景图等比例拉伸至 整个盒子都有背景，但图片可能不完整*/
+	background-size: cover;
+	/*第一个是y方向,第二个是x*/
+	background-position: center top;
+}
+.main{
+	width: 100%;
+	height: 610px;
+	margin-top: 60px;
+	position: relative;
+}
+.main .lt{
+	position: absolute;
+	top: 40%;
+	left: 40px;
+	width: 70px;
+	height: 70px;
+	background: white;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 40px;
+	color: #fc6396;
+}
+.main .wrap{
+	position: absolute;
+	top: 0;
+	width: 280px;;
+	height: 600px;
+	left: 45%;
+}
+.main .wrap .iphone{
+	position: relative;
+	width: 280px;
+	height: 550px;
+	margin-top: 20px;
+}
+.main .wrap .over{
+	position:absolute; 
+	top: 18px;
+}
+.main .wrap .chat{
+	width: 280px;
+	height: 550px;
+	margin-top: 2px;
+}
+.main .words{
+	position:absolute; 
+	top: 0;
+	width: 100px;;
+	height: 600px;
+	left: 63%;
+}
+.words .box1 .num04{
+	margin-top: 25%;
+	margin-left: 45px;
+	width: 80px;
+	height: 48px;
+}
+.words .box1 .title-chat{
+	margin-top: 23%;
+	margin-left: 45px;
+	width: 90px;
+	height: 20px;
+}
+.words .word1{
+	margin: 40px 10px 0 50px;
+	padding: 10px;
+	width: 250px;
+	height: 40px;
+	background: #fff;
+	opacity: 1; 
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	color: #fc6396;
+	line-height: 40px;
+	font-size: 35px;
+}
+.words .word2{
+	margin: 10px 10px 0 50px;
+	padding: 10px;
+	width: 200px;
+	height: 40px;
+	background: #fff;
+	opacity: 1; 
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	line-height: 40px;
+	font-size: 32px;
+	color: #fc6396;
+}
+.words .word3{
+	margin: 80px 10px 0 50px;
+	padding: 10px;
+	width: 330px;
+	height: 150px;
+	background: #fff;
+	opacity: 1; 
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	color: black;
+	line-height: 30px;
+	font-size: 17px;
+	font-weight: 550;
+}
+.gt{
+	position:absolute;
+	top: 40%;
+	left: 93%;
+	width: 70px;
+	height: 70px;
+	background: white;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 40px;
+	color: #fc6396; 
+}
+.circles{
+	width: 100%;
+	height: 50px;
+	left: 40%;
+	bottom: 10px;
+	position: absolute;
+}
+.circles span{
+	/*块级元素*/
+	display: block;
+	width: 13px;
+	height: 13px;
+	background: white;
+	/*圆角属性,50%为圆*/
+	border-radius: 50%;
+	float: left;
+	margin-left: 30px;
+}
+/*当前标签颜色*/
+.current{
+	background: #fc6396!important;
+	position: relative;
+}
+.current:hover{
+	display: block;
+	width: 13px;
+	height: 13px;
+	background: #fc6396;
+	transform:scale(2.0);
+}
+
+.main .colorbox{
+	width: 20px;
+	height: 20px;
+	float: right;
+	margin:200px auto 0;
+	position: relative;
+	animation: rotate 30s infinite;
+	transform-style: preserve-3d;
+}
+@keyframes rotate{
+	from{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+	to{transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);}
+}
+.colorbox div{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	position: absolute;
+	/*margin: 600px auto 0;*/
+}
+.colorbox div:nth-child(1){
+	background: rgba(255,0,0,0.5);
+	transform: translateZ(200px);
+	z-index: 10;
+}
+.colorbox div:nth-child(2){
+	background: rgba(0,255,200,0.5);
+	transform: rotateX(180deg) translateZ(200px);
+}
+.colorbox div:nth-child(3){
+	background: rgba(0,0,255,0.5);
+	transform: rotateY(90deg) translateZ(200px);
+}
+.colorbox div:nth-child(4){
+	background: rgba(255,255,0,0.5);
+	transform: rotateY(-90deg) translateZ(200px);
+}
+.colorbox div:nth-child(5){
+	background: rgba(255,0,255,0.5);
+	transform: rotateX(90deg) translateZ(200px);
+}
+	.colorbox div:nth-child(6){
+	background: rgba(255,255,250,0.5);
+	transform: rotateX(-90deg) translateZ(200px);
+}
+
+a{
+	overflow: hidden;
+    display: inline-block;
+}
+
+a:hover{
+-webkit-transform:scale(1.3);-o-transform:scale(1.3);
+}
+.anum03{
+	width: 100%;
+	height: 60px;
+}
+.atitle-thanks{
+	width: 100%;
+	height: 30px;
+}
+/*旋转：transform:rotate(-45deg);
+缩放：transform:scale(.5);scaleX(2);scaleY(3)。如果给了负值，能够达到翻转的效果：scaleX(-1)
+移动：transform:translate(1px,2px).使用其他单位：em,%也是可以的。
+倾斜：transform:skew(45deg,0);*/
+li:hover {transform:translate(5px,5px);

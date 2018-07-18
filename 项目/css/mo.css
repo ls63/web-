@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{text-decoration: none;}
+li{list-style: none;}
+
+
+ 
+.logo{
+	
+	padding-top: 23px;
+	height: 100px;
+	padding-right: 20px;
+}
+
+.logo1{
+	background-image: url(../img/googleplay.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: right;
+	width: 173px;
+	height: 51px;
+	margin-left: 18px;
+}
+
+.logo2{
+	background-image: url(../img/applestore.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: right;
+	width: 173px;
+	height: 51px;
+	
+}
+.logo3{
+	background-image: url(../img/index/me.svg);
+    float: left;
+   
+    background-repeat: no-repeat;
+    background-size: contain;	
+    padding-left: 30px;
+	width: 143px;
+	height: 51px;
+	margin-left: 18px;
+}
+
+footer{
+	float: right;
+	padding-bottom: 0;
+	padding-right: 20px;
+}
+footer .bird{
+	border:1px solid #FFFFFF; 
+	width:30px; 
+	height:30px; 
+	margin:0 auto; 
+    -webkit-border-radius:50px; 
+    -moz-border-radius:50px; 
+    -o-border-radius:50px; 
+    border-radius:50%; 
+    background-color: #55acee;
+    float: right;
+   margin-left: 20px;
+}
+footer .bird p{
+	width:25px; 
+	height:25px;
+
+	margin-top: 5px;
+	margin-left: 1px;
+}
+footer .f{
+	border:1px solid #FFFFFF; 
+	width:30px; 
+	height:30px; 
+	margin:0 auto; 
+    -webkit-border-radius:50px; 
+    -moz-border-radius:50px; 
+    -o-border-radius:50px; 
+    border-radius:50%; 
+    background-color: #3b5998;
+    float: right;
+    margin-left: 10px;
+}
+footer .f p{
+	width:15px; 
+	height:15px;
+	margin-left: 5px;
+}
+footer .share{
+	float: right;
+	line-height: 30px;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-family: arial;
+	margin-left: 10px;
+	border-bottom: 2px solid #FFFFFF;
+	text-shadow: 2px 2px 1px rgb(0,0,0.5);
+	bottom: 15px;
+}
+footer .back{
+	padding-right: 12px;
+	padding-left: 15px;
+	margin-left: 30px;
+	margin-bottom: 15px;
+	float: left;
+	border: 1px solid #FFFFFF;
+	border-radius: 24px;
+	line-height: 36px;
+	color: #FF3366;
+	font-size: 15px;
+	bottom: 35px;
+	right: 15px;
+	background: #FE3A64;
+}
